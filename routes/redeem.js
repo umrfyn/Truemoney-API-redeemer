@@ -7,7 +7,7 @@ const path = require('path');
 
 const router = express.Router();
 
-router.post('/', validateRedeem, asyncHandler(async (req, res) => {
+router.post('/', validateRedeem, asyHandler(async (req, res) => {
   const { voucherCode, mobileNumber } = req.body;
   const dbPath = path.join(__dirname, '../DatabaseT.txt');
 
@@ -35,3 +35,4 @@ router.post('/', validateRedeem, asyncHandler(async (req, res) => {
 }));
 
 module.exports = router; 
+nc

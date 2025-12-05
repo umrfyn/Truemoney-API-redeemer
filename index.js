@@ -31,7 +31,7 @@ app.use("/api/", limiter);
 app.use("/api/redeem", apiRedeemRouter);
 
 app.get("/", (req, res) => {
-  res.redirect("https://github.com/4levy");
+  res.redirect("https://github.com/umrfyn");
 });
 
 app.use((req, res) => {
